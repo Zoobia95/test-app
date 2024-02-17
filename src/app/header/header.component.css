@@ -1,0 +1,354 @@
+.allContent {
+  width: 1000px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: #20293a;
+  height: 150px;
+}
+
+.img-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.welcom-text {
+  color: white;
+}
+
+.padding-class-1 {
+  padding-top: 20px;
+}
+
+.welcome-row {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.welcom-text-detail {
+  color: white;
+  position: absolute;
+  margin-top: -11px;
+  margin-left: 68px;
+  font-size: 9px;
+}
+
+.bell-icon {
+  fill: white;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  margin-left: 53px;
+  margin-top: -10px;
+}
+
+.envelop-svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.messages {
+  color: white;
+  margin-left: 8px;
+  position: absolute;
+  margin-top: 6px;
+}
+
+.setting-button {
+  background-color: #48958d;
+  margin-left: 95px;
+  color: white;
+  border-radius: 20px;
+}
+
+.setting-icon {
+  fill: white;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.margin-class-1 {
+  margin-top: 10px;
+}
+
+.tab-button {
+  background-color: #111729;
+  color: white;
+  font-size: 10px;
+  margin-top: 60px;
+}
+
+.down-arrow {
+  fill: white;
+  width: 7px;
+  height: 7px;
+  margin-left: 3px;
+  margin-top: -1px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .welcome-row {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .welcom-text-detail {
+    color: white;
+    position: absolute;
+    margin-top: -6px;
+    margin-left: 36px;
+    font-size: 7px;
+  }
+
+  .img-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bell-icon {
+    fill: white;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    margin-left: 27px;
+    margin-top: -6px;
+  }
+
+  .margin-class-1 {
+    margin-top: 2px;
+  }
+
+  .tab-button {
+    background-color: #111729;
+    color: white;
+    font-size: 10px;
+    margin-top: 70px;
+  }
+
+  .allContent {
+    width: 493px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .welcome-row {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .welcom-text-detail {
+    color: white;
+    position: absolute;
+    margin-top: -6px;
+    margin-left: 36px;
+    font-size: 7px;
+  }
+
+  .img-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bell-icon {
+    fill: white;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    margin-left: 27px;
+    margin-top: -6px;
+  }
+
+  .margin-class-1 {
+    margin-top: 2px;
+  }
+
+  .tab-button {
+    background-color: #111729;
+    color: white;
+    font-size: 10px;
+    margin-top: 70px;
+  }
+
+  .allContent {
+    width: 493px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .welcome-row {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .welcom-text-detail {
+    color: white;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 68px;
+    font-size: 9px;
+  }
+  .img-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bell-icon {
+    fill: white;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    margin-left: 53px;
+    margin-top: -10px;
+  }
+
+  .margin-class-1 {
+    margin-top: 10px;
+  }
+
+  .tab-button {
+    background-color: #111729;
+    color: white;
+    font-size: 10px;
+    margin-top: 60px;
+  }
+
+  .allContent {
+    width: 701px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .welcome-row {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .welcom-text-detail {
+    color: white;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 68px;
+    font-size: 9px;
+  }
+  .img-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bell-icon {
+    fill: white;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    margin-left: 53px;
+    margin-top: -10px;
+  }
+
+  .margin-class-1 {
+    margin-top: 10px;
+  }
+
+  .tab-button {
+    background-color: #111729;
+    color: white;
+    font-size: 10px;
+    margin-top: 60px;
+  }
+
+  .allContent {
+    width: 1000px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .welcome-row {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .welcom-text-detail {
+    color: white;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 68px;
+    font-size: 9px;
+  }
+  .img-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .bell-icon {
+    fill: white;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    margin-left: 53px;
+    margin-top: -10px;
+  }
+
+  .margin-class-1 {
+    margin-top: 10px;
+  }
+
+  .tab-button {
+    background-color: #111729;
+    color: white;
+    font-size: 10px;
+    margin-top: 60px;
+  }
+
+  .allContent {
+    width: 1000px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
