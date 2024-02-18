@@ -1,0 +1,100 @@
+mat-header-cell,
+mat-cell {
+  justify-content: center;
+}
+
+.allContent {
+  width: 450px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.main-div {
+  color: white;
+  border: 1px solid white;
+  margin: 110px;
+}
+
+.my-button-1 {
+  color: white;
+  background-color: #2b3444;
+}
+
+.button-class {
+  margin-top: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .allContent {
+    width: 450px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: 60px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .allContent {
+    width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: 60px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .allContent {
+    width: 700px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .allContent {
+    width: 1000px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .allContent {
+    width: 1200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+}

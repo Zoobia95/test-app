@@ -1,0 +1,50 @@
+<div class="allContent">
+  <div *ngIf="dataSource" class="main-div">
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef>Id</mat-header-cell>
+        <mat-cell class="description-cell" *matCellDef="let comm">{{
+          comm.id
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-cell *matCellDef="let comm">{{ comm.name }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="postId">
+        <mat-header-cell *matHeaderCellDef>Post Id</mat-header-cell>
+        <mat-cell class="duration-cell" *matCellDef="let comm">{{
+          comm.postId
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+        <mat-cell class="description-cell" *matCellDef="let comm">{{
+          comm.email
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="body">
+        <mat-header-cell *matHeaderCellDef>Body</mat-header-cell>
+        <mat-cell class="description-cell" *matCellDef="let comm">{{
+          comm.body
+        }}</mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+  </div>
+
+  <div class="row button-class">
+    <div class="col-4"></div>
+    <div class="col-4 d-flex justify-content-center">
+      <button class="btn my-button-1" (click)="goBack()">Go Back</button>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>

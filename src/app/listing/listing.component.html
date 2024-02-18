@@ -1,0 +1,112 @@
+<div class="allContent">
+  <div class="row mb-5 mb-md-0 mb-lg-0">
+    <div class="col-md-1 col-lg-5"></div>
+    <div class="col-md-1 col-lg-2"></div>
+    <div class="col-md-9 col-lg-5">
+      <div class="row">
+        <div class="col col-md-1 col-lg-1"></div>
+        <div class="col-4 col-md-5 col-lg-4 label p-2">Search Posts</div>
+        <div class="col-7 col-md-6 col-lg-6 input-field p-2">
+          <mat-form-field>
+            <input
+              matInput
+              #input
+              (input)="search($event, input.value)"
+              (keydown)="refreshSearch($event)"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 col-lg-1"></div>
+  </div>
+
+  <div class="main-div">
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef>Id</mat-header-cell>
+        <mat-cell class="description-cell" *matCellDef="let post">{{
+          post.id
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
+        <mat-cell *matCellDef="let post">{{ post.title }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="userId">
+        <mat-header-cell *matHeaderCellDef>User Id</mat-header-cell>
+        <mat-cell class="duration-cell" *matCellDef="let post">{{
+          post.userId
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="body">
+        <mat-header-cell *matHeaderCellDef>Body</mat-header-cell>
+        <mat-cell class="description-cell" *matCellDef="let post">{{
+          post.body
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="user">
+        <mat-header-cell *matHeaderCellDef>Go To User Details</mat-header-cell>
+        <mat-cell
+          class="description-cell"
+          *matCellDef="let post"
+          class="user-details"
+          (click)="goToUserDetails(post)"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+          </span>
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="comments">
+        <mat-header-cell *matHeaderCellDef>Go To Comments</mat-header-cell>
+        <mat-cell
+          class="description-cell"
+          *matCellDef="let post"
+          class="user-details"
+          (click)="goToComments(post)"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chat-dots-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+              />
+            </svg>
+          </span>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+      <mat-row
+        *matRowDef="let row; columns: displayedColumns"
+        class="cursor-class"
+      ></mat-row>
+    </mat-table>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+mat-header-cell,
+mat-cell {
+  justify-content: center;
+}
+
+.allContent {
+  width: 1500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-div {
+  color: white;
+  border: 1px solid white;
+  margin: 110px;
+}
+
+.input-field {
+  color: white;
+  border: 1px solid white;
+  margin-top: 100px;
+}
+
+.label {
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.cursor-class {
+  cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .allContent {
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: -12px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .allContent {
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: -12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .allContent {
+    width: 600px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: 38px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .allContent {
+    width: 900px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: 19px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .allContent {
+    width: 1200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    color: white;
+    border: 1px solid white;
+    margin: 30px;
+  }
+}
